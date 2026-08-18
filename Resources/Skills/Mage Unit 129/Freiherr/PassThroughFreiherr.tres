@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="PassThroughFreiherr" format=3 uid="uid://bahffjn6yyfq4"]
+
+[ext_resource type="Script" uid="uid://qndu558vgkej" path="res://Scripts/Character/SkillScripts/Player/Mage Unit 129/Freiherr/PassThroughFreiherr.gd" id="1_ayf4b"]
+
+[resource]
+script = ExtResource("1_ayf4b")
+validTargetStates = Array[int]([1, 3, 0])
+skillName = "Pass Through"
+damage = 3
+damageVar = 2
+selfPos = Array[int]([1, 2])
+tarPos = Array[int]([1, 2])
+timeCost = 2
+pierce = 1
+manaCost = 4
+accuracyBonus = 5
+metadata/_custom_type_script = "uid://b3exfua6kxbit"

@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://c0bc544c07tyo"]
+
+[ext_resource type="Script" uid="uid://dbfyttd3e7ekc" path="res://Resources/Characters/Players/Mage Unit 129/Galahad/Galahad.gd" id="1_goedy"]
+[ext_resource type="Resource" uid="uid://bp6ymhqacibis" path="res://Resources/Skills/Common Skills/Pass.tres" id="2_u8nd2"]
+
+[node name="Galahad" type="Node2D" unique_id=1231154250]
+script = ExtResource("1_goedy")
+maxHP = 25
+maxMP = 14
+originalDefense = 3
+resilience = 4
+recoverHP = 12
+originalSpeed = 9
+manaRegen = 4
+manaExhaust = 3
+manaBonus = 2
+hpRegen = 7
+originalAccuracy = 80
+passSkill = ExtResource("2_u8nd2")
+charName = "Galahad"
+keywords = Array[int]([1, 17, 18, 23, 16, 14])
+metadata/_custom_type_script = "uid://07b6qvrvld8d"

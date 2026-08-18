@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://boji5ad2dotmu"]
+
+[ext_resource type="Script" uid="uid://c1vsl0a1jab0h" path="res://Resources/Characters/Enemies/AstrigianArmsman/AstrigianArmsman.gd" id="1_2yj3l"]
+[ext_resource type="Resource" uid="uid://bp6ymhqacibis" path="res://Resources/Skills/Common Skills/Pass.tres" id="2_xymbw"]
+[ext_resource type="Resource" uid="uid://btfdgd6r614f1" path="res://Resources/Skills/Enemy/AstrigianArmsman/BlessShotArmsman.tres" id="3_rvq2t"]
+[ext_resource type="Resource" uid="uid://ctojx2608it0c" path="res://Resources/Skills/Enemy/AstrigianArmsman/RifleShotAstrigianArmsman.tres" id="4_c46kk"]
+[ext_resource type="Resource" uid="uid://bbbq2r0jqd40t" path="res://Resources/Skills/Enemy/AstrigianArmsman/SlashAstrigianArmsman.tres" id="5_6bdsw"]
+[ext_resource type="SpriteFrames" uid="uid://b3k1xi5xy0flf" path="res://Art/Sprites/Enemy/AstrigianArmsman/AstrigianArmsman.tres" id="6_c46kk"]
+
+[node name="AstrigianArmsman" type="Node2D" unique_id=1286901960]
+script = ExtResource("1_2yj3l")
+maxHP = 15
+originalDefense = 1
+originalSpeed = 13
+originalAccuracy = 75
+passSkill = ExtResource("2_xymbw")
+charName = "Astrigian Armsman"
+skills = Array[Object]([ExtResource("3_rvq2t"), ExtResource("4_c46kk"), ExtResource("5_6bdsw")])
+keywords = Array[int]([4, 16, 18])
+metadata/_custom_type_script = "uid://crda8oepqrnj"
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1054341678]
+position = Vector2(-106.999985, -365)
+scale = Vector2(1.4792961, 1.479296)
+sprite_frames = ExtResource("6_c46kk")
+animation = &"idle"

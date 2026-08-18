@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Skill" format=3 uid="uid://bbbq2r0jqd40t"]
+
+[ext_resource type="Script" uid="uid://b3exfua6kxbit" path="res://Scripts/Character/Skill.gd" id="1_lvyrs"]
+
+[resource]
+script = ExtResource("1_lvyrs")
+validTargetStates = Array[int]([0, 1])
+skillName = "Slash"
+damage = 3
+damageVar = 1
+selfPos = Array[int]([1, 2])
+tarPos = Array[int]([1, 2])
+metadata/_custom_type_script = "uid://b3exfua6kxbit"

@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CarapaceProtocol" format=3 uid="uid://d3tr18fpwdwiu"]
+
+[ext_resource type="Script" uid="uid://c4v32jv2i5a7i" path="res://Scripts/Character/SkillScripts/Player/Mage Unit 129/Siegfried/CarapaceProtocol.gd" id="1_cruc6"]
+
+[resource]
+script = ExtResource("1_cruc6")
+validTargetStates = Array[int]([0, 1])
+targetType = 3
+skillName = "Carapace Protocol"
+selfPos = Array[int]([2, 3, 4])
+tarPos = Array[int]([1, 2, 3, 4])
+timeCost = 2
+manaCost = 6
+ignoreDefense = true
+ignoreOffense = true
+metadata/_custom_type_script = "uid://b3exfua6kxbit"

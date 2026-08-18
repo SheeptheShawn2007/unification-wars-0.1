@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="RifleshotArmsman" format=3 uid="uid://ctojx2608it0c"]
+
+[ext_resource type="Script" uid="uid://doxrax8f6wbkb" path="res://Scripts/Character/SkillScripts/Enemy/AstrigianArmsman/RifleshotArmsman.gd" id="1_pwdbh"]
+
+[resource]
+script = ExtResource("1_pwdbh")
+validTargetStates = Array[int]([0, 1, 3])
+skillName = "Rifle Shot"
+damage = 5
+damageVar = 2
+selfPos = Array[int]([3, 4])
+tarPos = Array[int]([1, 2, 3, 4])
+accuracyBonus = 5
+metadata/_custom_type_script = "uid://b3exfua6kxbit"

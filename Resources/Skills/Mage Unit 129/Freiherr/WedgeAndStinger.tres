@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="WedgeAndStinger" format=3 uid="uid://pdbj3ym7hj1i"]
+
+[ext_resource type="Script" uid="uid://c8hn5cm7i2cuk" path="res://Scripts/Character/SkillScripts/Player/Mage Unit 129/Freiherr/WedgeAndStinger.gd" id="1_lta1g"]
+
+[resource]
+script = ExtResource("1_lta1g")
+validTargetStates = Array[int]([0, 1, 3])
+targetType = 2
+skillName = "Wedge and Stinger"
+damage = 5
+selfPos = Array[int]([1, 2])
+tarPos = Array[int]([1, 2])
+timeCost = 4
+pierce = 3
+manaCost = 5
+metadata/_custom_type_script = "uid://b3exfua6kxbit"

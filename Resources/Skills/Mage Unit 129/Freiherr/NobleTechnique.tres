@@ -1,0 +1,17 @@
+[gd_resource type="Resource" format=3 uid="uid://bkpva32nhl7au"]
+
+[ext_resource type="Script" uid="uid://b3bdn68r1vx0e" path="res://Scripts/Character/SkillScripts/Player/Mage Unit 129/Freiherr/NobleTechnique.gd" id="1_rtkdx"]
+
+[resource]
+script = ExtResource("1_rtkdx")
+validTargetStates = Array[int]([0, 1])
+targetType = 3
+skillName = "Noble Technique"
+selfPos = Array[int]([1, 2])
+tarPos = Array[int]([1, 2, 3, 4])
+timeCost = 4
+manaCost = 5
+accuracyBonus = 999
+ignoreDodge = true
+ignoreOffense = true
+metadata/_custom_type_script = "uid://b3exfua6kxbit"

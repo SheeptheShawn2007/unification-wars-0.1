@@ -1,0 +1,17 @@
+[gd_resource type="Resource" format=3 uid="uid://ceso5edgwidcu"]
+
+[ext_resource type="Script" uid="uid://cujevjmltm0xe" path="res://Scripts/Character/SkillScripts/Player/Mage Unit 129/Freiherr/TalesFromTheBottle.gd" id="1_blxv1"]
+
+[resource]
+script = ExtResource("1_blxv1")
+validTargetStates = Array[int]([1, 0])
+targetType = 3
+skillName = "Tales From the Bottle"
+selfPos = Array[int]([2, 3])
+tarPos = Array[int]([1, 2, 3, 4])
+timeCost = 3
+manaCost = 4
+accuracyBonus = 999
+ignoreDodge = true
+ignoreOffense = true
+metadata/_custom_type_script = "uid://b3exfua6kxbit"

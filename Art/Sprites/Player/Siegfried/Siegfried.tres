@@ -1,0 +1,14 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://pso7ahrvyj2w"]
+
+[ext_resource type="Texture2D" uid="uid://i1dn5331qple" path="res://Art/Sprites/Player/Siegfried/Siegfried Placeholder.jpg" id="1_c28yl"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_c28yl")
+}],
+"loop": 1,
+"name": &"Idle",
+"speed": 5.0
+}]

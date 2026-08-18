@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="BayonetSlash" format=3 uid="uid://c6g4umov4ug42"]
+
+[ext_resource type="Script" uid="uid://bepn2bomesepe" path="res://Scripts/Character/SkillScripts/Player/Mage Unit 129/Siegfried/BayonetSlashSiegfried.gd" id="1_y4wor"]
+
+[resource]
+script = ExtResource("1_y4wor")
+validTargetStates = Array[int]([0, 1, 2, 3])
+skillName = "Bayonet Strike"
+damage = 3
+damageVar = 3
+selfPos = Array[int]([1, 2, 3, 4])
+tarPos = Array[int]([1, 2])
+timeCost = -1
+accuracyBonus = 5
+metadata/_custom_type_script = "uid://b3exfua6kxbit"

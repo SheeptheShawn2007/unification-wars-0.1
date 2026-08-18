@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://cs6xu4043vwea"]
+
+[ext_resource type="Script" uid="uid://bnttmujfj8nqw" path="res://Resources/Characters/Enemies/LaticianSniper/LaticianSniper.gd" id="1_2msaa"]
+
+[node name="LaticianSniper" type="Node2D" unique_id=115259397]
+script = ExtResource("1_2msaa")
+charName = "Latician Marksman"
+metadata/_custom_type_script = "uid://crda8oepqrnj"

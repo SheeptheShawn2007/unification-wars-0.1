@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="Skill" format=3 uid="uid://cjgdypm2gfi2t"]
+
+[ext_resource type="Script" uid="uid://b3exfua6kxbit" path="res://Scripts/Character/Skill.gd" id="1_gnbub"]
+
+[resource]
+script = ExtResource("1_gnbub")
+validTargetStates = Array[int]([0, 1, 3])
+skillName = "Shotgun Blast"
+damage = 5
+damageVar = 3
+selfPos = Array[int]([1])
+tarPos = Array[int]([1, 2, 3])
+timeCost = 1
+pierce = 1
+accuracyBonus = 15
+metadata/_custom_type_script = "uid://b3exfua6kxbit"

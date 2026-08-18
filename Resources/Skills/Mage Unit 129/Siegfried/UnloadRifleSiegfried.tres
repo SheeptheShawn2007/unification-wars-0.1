@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="UnloadRifle" format=3 uid="uid://ckxaanauwt7qi"]
+
+[ext_resource type="Script" uid="uid://bnq3emuoyeovx" path="res://Scripts/Character/SkillScripts/Player/Mage Unit 129/Siegfried/UnloadRifleSiegfried.gd" id="1_b70id"]
+
+[resource]
+script = ExtResource("1_b70id")
+validTargetStates = Array[int]([0, 1, 2, 3])
+skillName = "Unload"
+selfPos = Array[int]([2, 3, 4])
+tarPos = Array[int]([1, 2, 3])
+timeCost = 4
+pierce = 1
+manaCost = 2
+accuracyBonus = 10
+metadata/_custom_type_script = "uid://b3exfua6kxbit"

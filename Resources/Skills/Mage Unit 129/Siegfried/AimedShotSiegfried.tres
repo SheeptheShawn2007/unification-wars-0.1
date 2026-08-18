@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="AimedRifleShot" format=3 uid="uid://dg1tip3pdiibm"]
+
+[ext_resource type="Script" uid="uid://ch4tkraqbihkv" path="res://Scripts/Character/SkillScripts/Player/Mage Unit 129/Siegfried/AimedShotSiegfried.gd" id="1_oawjb"]
+
+[resource]
+script = ExtResource("1_oawjb")
+validTargetStates = Array[int]([0, 1, 2, 3])
+skillName = "Aim and Fire"
+damage = 4
+damageVar = 3
+selfPos = Array[int]([2, 3, 4])
+tarPos = Array[int]([1, 2, 3, 4])
+timeCost = 2
+pierce = 1
+accuracyBonus = 5
+metadata/_custom_type_script = "uid://b3exfua6kxbit"

@@ -1,0 +1,699 @@
+[gd_scene format=3 uid="uid://1iv33chc1gw5"]
+
+[ext_resource type="Script" uid="uid://bixin68mxml0t" path="res://Resources/Levels/game.gd" id="1_5347d"]
+[ext_resource type="Script" uid="uid://fngd2fqntl1w" path="res://Scripts/Combat/BattleManager.gd" id="2_ng846"]
+[ext_resource type="Script" uid="uid://cy3keouhqcug1" path="res://Scripts/UI Scripts/SlotButton.gd" id="3_bwkcf"]
+[ext_resource type="Script" uid="uid://c2c61m62fwkyb" path="res://Scripts/Combat/TurnQueue.gd" id="4_8j8i6"]
+[ext_resource type="Script" uid="uid://d2dssntr7um0g" path="res://Resources/SlotPanel.gd" id="4_ng846"]
+[ext_resource type="Script" uid="uid://cfwvx51nhb2r3" path="res://Scripts/UI Scripts/BattleUI.gd" id="5_ngw4r"]
+[ext_resource type="StyleBox" uid="uid://ccc3seuofjekn" path="res://Resources/Textures/HPBar.tres" id="6_ya3js"]
+[ext_resource type="StyleBox" uid="uid://dudpwolyfst5v" path="res://Resources/Textures/MPBar.tres" id="7_50l6t"]
+
+[node name="Game" type="Node" unique_id=1599937149]
+script = ExtResource("1_5347d")
+
+[node name="Battle" type="Node" parent="." unique_id=1049557931]
+
+[node name="BattleManager" type="Node" parent="Battle" unique_id=895276368]
+script = ExtResource("2_ng846")
+
+[node name="Parties" type="Node2D" parent="Battle/BattleManager" unique_id=835999662]
+
+[node name="PlayerParty" type="Node2D" parent="Battle/BattleManager/Parties" unique_id=415367334]
+
+[node name="Slot1" type="Marker2D" parent="Battle/BattleManager/Parties/PlayerParty" unique_id=365687456]
+position = Vector2(780, 650)
+
+[node name="SlotButton" type="Button" parent="Battle/BattleManager/Parties/PlayerParty/Slot1" unique_id=1470676353]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -100.0
+offset_top = -512.0
+offset_right = 100.0
+grow_horizontal = 2
+grow_vertical = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+focus_mode = 0
+script = ExtResource("3_bwkcf")
+slotNumber = 1
+
+[node name="VboxContainer" type="VBoxContainer" parent="Battle/BattleManager/Parties/PlayerParty/Slot1" unique_id=110936599]
+custom_minimum_size = Vector2(200, 30)
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -100.0
+offset_right = 100.0
+offset_bottom = 40.0
+grow_horizontal = 2
+script = ExtResource("4_ng846")
+slotNumber = 1
+
+[node name="HPBar" type="ProgressBar" parent="Battle/BattleManager/Parties/PlayerParty/Slot1/VboxContainer" unique_id=1335857628]
+custom_minimum_size = Vector2(200, 15)
+layout_mode = 2
+theme_override_styles/fill = ExtResource("6_ya3js")
+show_percentage = false
+
+[node name="Label" type="Label" parent="Battle/BattleManager/Parties/PlayerParty/Slot1/VboxContainer/HPBar" unique_id=697795355]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="MPBar" type="ProgressBar" parent="Battle/BattleManager/Parties/PlayerParty/Slot1/VboxContainer" unique_id=983897440]
+custom_minimum_size = Vector2(200, 15)
+layout_mode = 2
+theme_override_styles/fill = ExtResource("7_50l6t")
+show_percentage = false
+
+[node name="Label" type="Label" parent="Battle/BattleManager/Parties/PlayerParty/Slot1/VboxContainer/MPBar" unique_id=1041108974]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Slot2" type="Marker2D" parent="Battle/BattleManager/Parties/PlayerParty" unique_id=648126940]
+position = Vector2(564, 650)
+
+[node name="SlotButton" type="Button" parent="Battle/BattleManager/Parties/PlayerParty/Slot2" unique_id=1912685099]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -100.0
+offset_top = -512.0
+offset_right = 100.0
+grow_horizontal = 2
+grow_vertical = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+focus_mode = 0
+script = ExtResource("3_bwkcf")
+slotNumber = 2
+
+[node name="VboxContainer" type="VBoxContainer" parent="Battle/BattleManager/Parties/PlayerParty/Slot2" unique_id=992127411]
+custom_minimum_size = Vector2(200, 30)
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -100.0
+offset_right = 100.0
+offset_bottom = 40.0
+grow_horizontal = 2
+script = ExtResource("4_ng846")
+slotNumber = 2
+
+[node name="HPBar" type="ProgressBar" parent="Battle/BattleManager/Parties/PlayerParty/Slot2/VboxContainer" unique_id=2145293156]
+custom_minimum_size = Vector2(200, 15)
+layout_mode = 2
+theme_override_styles/fill = ExtResource("6_ya3js")
+show_percentage = false
+
+[node name="Label" type="Label" parent="Battle/BattleManager/Parties/PlayerParty/Slot2/VboxContainer/HPBar" unique_id=462162299]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="MPBar" type="ProgressBar" parent="Battle/BattleManager/Parties/PlayerParty/Slot2/VboxContainer" unique_id=2115536030]
+custom_minimum_size = Vector2(200, 15)
+layout_mode = 2
+theme_override_styles/fill = ExtResource("7_50l6t")
+show_percentage = false
+
+[node name="Label" type="Label" parent="Battle/BattleManager/Parties/PlayerParty/Slot2/VboxContainer/MPBar" unique_id=1116924517]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Slot3" type="Marker2D" parent="Battle/BattleManager/Parties/PlayerParty" unique_id=1342068143]
+position = Vector2(348, 650)
+
+[node name="SlotButton" type="Button" parent="Battle/BattleManager/Parties/PlayerParty/Slot3" unique_id=2109673765]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -100.0
+offset_top = -512.0
+offset_right = 100.0
+grow_horizontal = 2
+grow_vertical = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+focus_mode = 0
+script = ExtResource("3_bwkcf")
+slotNumber = 3
+
+[node name="VboxContainer" type="VBoxContainer" parent="Battle/BattleManager/Parties/PlayerParty/Slot3" unique_id=1379451270]
+custom_minimum_size = Vector2(200, 30)
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -100.0
+offset_right = 100.0
+offset_bottom = 40.0
+grow_horizontal = 2
+script = ExtResource("4_ng846")
+slotNumber = 3
+
+[node name="HPBar" type="ProgressBar" parent="Battle/BattleManager/Parties/PlayerParty/Slot3/VboxContainer" unique_id=332252957]
+custom_minimum_size = Vector2(200, 15)
+layout_mode = 2
+theme_override_styles/fill = ExtResource("6_ya3js")
+show_percentage = false
+
+[node name="Label" type="Label" parent="Battle/BattleManager/Parties/PlayerParty/Slot3/VboxContainer/HPBar" unique_id=383028686]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="MPBar" type="ProgressBar" parent="Battle/BattleManager/Parties/PlayerParty/Slot3/VboxContainer" unique_id=2140031953]
+custom_minimum_size = Vector2(200, 15)
+layout_mode = 2
+theme_override_styles/fill = ExtResource("7_50l6t")
+show_percentage = false
+
+[node name="Label" type="Label" parent="Battle/BattleManager/Parties/PlayerParty/Slot3/VboxContainer/MPBar" unique_id=1084689819]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Slot4" type="Marker2D" parent="Battle/BattleManager/Parties/PlayerParty" unique_id=1290024131]
+position = Vector2(132, 650)
+
+[node name="SlotButton" type="Button" parent="Battle/BattleManager/Parties/PlayerParty/Slot4" unique_id=977583561]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -100.0
+offset_top = -512.0
+offset_right = 100.0
+grow_horizontal = 2
+grow_vertical = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+focus_mode = 0
+script = ExtResource("3_bwkcf")
+slotNumber = 4
+
+[node name="VboxContainer" type="VBoxContainer" parent="Battle/BattleManager/Parties/PlayerParty/Slot4" unique_id=1037647517]
+custom_minimum_size = Vector2(200, 30)
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -100.0
+offset_right = 100.0
+offset_bottom = 40.0
+grow_horizontal = 2
+script = ExtResource("4_ng846")
+slotNumber = 4
+
+[node name="HPBar" type="ProgressBar" parent="Battle/BattleManager/Parties/PlayerParty/Slot4/VboxContainer" unique_id=1678750429]
+custom_minimum_size = Vector2(200, 15)
+layout_mode = 2
+theme_override_styles/fill = ExtResource("6_ya3js")
+show_percentage = false
+
+[node name="Label" type="Label" parent="Battle/BattleManager/Parties/PlayerParty/Slot4/VboxContainer/HPBar" unique_id=1370068686]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="MPBar" type="ProgressBar" parent="Battle/BattleManager/Parties/PlayerParty/Slot4/VboxContainer" unique_id=733643339]
+custom_minimum_size = Vector2(200, 15)
+layout_mode = 2
+theme_override_styles/fill = ExtResource("7_50l6t")
+show_percentage = false
+
+[node name="Label" type="Label" parent="Battle/BattleManager/Parties/PlayerParty/Slot4/VboxContainer/MPBar" unique_id=684204674]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="EnemyParty" type="Node2D" parent="Battle/BattleManager/Parties" unique_id=1748618762]
+
+[node name="Slot1" type="Marker2D" parent="Battle/BattleManager/Parties/EnemyParty" unique_id=806106139]
+position = Vector2(1140, 650)
+
+[node name="SlotButton" type="Button" parent="Battle/BattleManager/Parties/EnemyParty/Slot1" unique_id=1594456335]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -100.0
+offset_top = -512.0
+offset_right = 100.0
+grow_horizontal = 2
+grow_vertical = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+focus_mode = 0
+script = ExtResource("3_bwkcf")
+slotNumber = 1
+enemySlot = true
+
+[node name="VboxContainer" type="VBoxContainer" parent="Battle/BattleManager/Parties/EnemyParty/Slot1" unique_id=1286652727]
+custom_minimum_size = Vector2(200, 30)
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -100.0
+offset_right = 100.0
+offset_bottom = 40.0
+grow_horizontal = 2
+script = ExtResource("4_ng846")
+slotNumber = 1
+enemySlot = true
+
+[node name="HPBar" type="ProgressBar" parent="Battle/BattleManager/Parties/EnemyParty/Slot1/VboxContainer" unique_id=1954270839]
+custom_minimum_size = Vector2(200, 15)
+layout_mode = 2
+theme_override_styles/fill = ExtResource("6_ya3js")
+show_percentage = false
+
+[node name="Label" type="Label" parent="Battle/BattleManager/Parties/EnemyParty/Slot1/VboxContainer/HPBar" unique_id=11039226]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="MPBar" type="ProgressBar" parent="Battle/BattleManager/Parties/EnemyParty/Slot1/VboxContainer" unique_id=2143463206]
+custom_minimum_size = Vector2(200, 15)
+layout_mode = 2
+theme_override_styles/fill = ExtResource("7_50l6t")
+show_percentage = false
+
+[node name="Label" type="Label" parent="Battle/BattleManager/Parties/EnemyParty/Slot1/VboxContainer/MPBar" unique_id=1076409094]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Slot2" type="Marker2D" parent="Battle/BattleManager/Parties/EnemyParty" unique_id=885630985]
+position = Vector2(1356, 650)
+
+[node name="SlotButton" type="Button" parent="Battle/BattleManager/Parties/EnemyParty/Slot2" unique_id=1351303714]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -100.0
+offset_top = -512.0
+offset_right = 100.0
+grow_horizontal = 2
+grow_vertical = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+focus_mode = 0
+script = ExtResource("3_bwkcf")
+slotNumber = 2
+enemySlot = true
+
+[node name="VboxContainer" type="VBoxContainer" parent="Battle/BattleManager/Parties/EnemyParty/Slot2" unique_id=956090002]
+custom_minimum_size = Vector2(200, 30)
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -100.0
+offset_right = 100.0
+offset_bottom = 40.0
+grow_horizontal = 2
+script = ExtResource("4_ng846")
+slotNumber = 2
+enemySlot = true
+
+[node name="HPBar" type="ProgressBar" parent="Battle/BattleManager/Parties/EnemyParty/Slot2/VboxContainer" unique_id=2099818553]
+custom_minimum_size = Vector2(200, 15)
+layout_mode = 2
+theme_override_styles/fill = ExtResource("6_ya3js")
+show_percentage = false
+
+[node name="Label" type="Label" parent="Battle/BattleManager/Parties/EnemyParty/Slot2/VboxContainer/HPBar" unique_id=2092741247]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="MPBar" type="ProgressBar" parent="Battle/BattleManager/Parties/EnemyParty/Slot2/VboxContainer" unique_id=1352742116]
+custom_minimum_size = Vector2(200, 15)
+layout_mode = 2
+theme_override_styles/fill = ExtResource("7_50l6t")
+show_percentage = false
+
+[node name="Label" type="Label" parent="Battle/BattleManager/Parties/EnemyParty/Slot2/VboxContainer/MPBar" unique_id=572724233]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Slot3" type="Marker2D" parent="Battle/BattleManager/Parties/EnemyParty" unique_id=944329596]
+position = Vector2(1572, 650)
+
+[node name="SlotButton" type="Button" parent="Battle/BattleManager/Parties/EnemyParty/Slot3" unique_id=447535459]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -100.0
+offset_top = -512.0
+offset_right = 100.0
+grow_horizontal = 2
+grow_vertical = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+focus_mode = 0
+script = ExtResource("3_bwkcf")
+slotNumber = 3
+enemySlot = true
+
+[node name="VboxContainer" type="VBoxContainer" parent="Battle/BattleManager/Parties/EnemyParty/Slot3" unique_id=934572793]
+custom_minimum_size = Vector2(200, 30)
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -100.0
+offset_right = 100.0
+offset_bottom = 40.0
+grow_horizontal = 2
+script = ExtResource("4_ng846")
+slotNumber = 3
+enemySlot = true
+
+[node name="HPBar" type="ProgressBar" parent="Battle/BattleManager/Parties/EnemyParty/Slot3/VboxContainer" unique_id=1701967298]
+custom_minimum_size = Vector2(200, 15)
+layout_mode = 2
+theme_override_styles/fill = ExtResource("6_ya3js")
+show_percentage = false
+
+[node name="Label" type="Label" parent="Battle/BattleManager/Parties/EnemyParty/Slot3/VboxContainer/HPBar" unique_id=398356737]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="MPBar" type="ProgressBar" parent="Battle/BattleManager/Parties/EnemyParty/Slot3/VboxContainer" unique_id=250951647]
+custom_minimum_size = Vector2(200, 15)
+layout_mode = 2
+theme_override_styles/fill = ExtResource("7_50l6t")
+show_percentage = false
+
+[node name="Label" type="Label" parent="Battle/BattleManager/Parties/EnemyParty/Slot3/VboxContainer/MPBar" unique_id=1654742500]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Slot4" type="Marker2D" parent="Battle/BattleManager/Parties/EnemyParty" unique_id=923843309]
+position = Vector2(1788, 650)
+
+[node name="SlotButton" type="Button" parent="Battle/BattleManager/Parties/EnemyParty/Slot4" unique_id=1104199520]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -100.0
+offset_top = -512.0
+offset_right = 100.0
+grow_horizontal = 2
+grow_vertical = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+focus_mode = 0
+script = ExtResource("3_bwkcf")
+slotNumber = 4
+enemySlot = true
+
+[node name="VboxContainer" type="VBoxContainer" parent="Battle/BattleManager/Parties/EnemyParty/Slot4" unique_id=328029158]
+custom_minimum_size = Vector2(200, 30)
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -100.0
+offset_right = 100.0
+offset_bottom = 40.0
+grow_horizontal = 2
+script = ExtResource("4_ng846")
+slotNumber = 4
+enemySlot = true
+
+[node name="HPBar" type="ProgressBar" parent="Battle/BattleManager/Parties/EnemyParty/Slot4/VboxContainer" unique_id=1608294601]
+custom_minimum_size = Vector2(200, 15)
+layout_mode = 2
+theme_override_styles/fill = ExtResource("6_ya3js")
+show_percentage = false
+
+[node name="Label" type="Label" parent="Battle/BattleManager/Parties/EnemyParty/Slot4/VboxContainer/HPBar" unique_id=1258906181]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="MPBar" type="ProgressBar" parent="Battle/BattleManager/Parties/EnemyParty/Slot4/VboxContainer" unique_id=603589481]
+custom_minimum_size = Vector2(200, 15)
+layout_mode = 2
+theme_override_styles/fill = ExtResource("7_50l6t")
+show_percentage = false
+
+[node name="Label" type="Label" parent="Battle/BattleManager/Parties/EnemyParty/Slot4/VboxContainer/MPBar" unique_id=885005653]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TurnQueue" type="Node" parent="Battle" unique_id=71860465]
+script = ExtResource("4_8j8i6")
+
+[node name="BattleUI" type="CanvasLayer" parent="Battle" unique_id=1370151378]
+script = ExtResource("5_ngw4r")
+
+[node name="TurnOrderPanel" type="HBoxContainer" parent="Battle/BattleUI" unique_id=141551286]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Battle/BattleUI/TurnOrderPanel" unique_id=1297742215]
+layout_mode = 2
+
+[node name="InfoPanel" type="PanelContainer" parent="Battle/BattleUI" unique_id=1457834393]
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -400.0
+offset_top = -350.0
+grow_horizontal = 0
+grow_vertical = 0
+size_flags_horizontal = 3
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Battle/BattleUI/InfoPanel" unique_id=380181172]
+layout_mode = 2
+
+[node name="CharacterName" type="Label" parent="Battle/BattleUI/InfoPanel/VBoxContainer" unique_id=951360528]
+layout_mode = 2
+horizontal_alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="Battle/BattleUI/InfoPanel/VBoxContainer" unique_id=738017744]
+custom_minimum_size = Vector2(300, 250)
+layout_mode = 2
+
+[node name="HPBar" type="ProgressBar" parent="Battle/BattleUI/InfoPanel/VBoxContainer" unique_id=1576120417]
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+theme_override_styles/fill = ExtResource("6_ya3js")
+show_percentage = false
+
+[node name="Label" type="Label" parent="Battle/BattleUI/InfoPanel/VBoxContainer/HPBar" unique_id=280607895]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="MPBar" type="ProgressBar" parent="Battle/BattleUI/InfoPanel/VBoxContainer" unique_id=160788252]
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+size_flags_vertical = 8
+theme_override_styles/fill = ExtResource("7_50l6t")
+show_percentage = false
+
+[node name="Label" type="Label" parent="Battle/BattleUI/InfoPanel/VBoxContainer/MPBar" unique_id=1576585248]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="SkillInfo" type="PanelContainer" parent="Battle/BattleUI" unique_id=576761974]
+anchors_preset = -1
+anchor_left = 0.5833333
+anchor_top = 0.6296296
+anchor_right = 0.7916667
+anchor_bottom = 1.0
+offset_top = 50.0
+grow_horizontal = 0
+grow_vertical = 2
+size_flags_horizontal = 10
+size_flags_vertical = 4
+metadata/_edit_use_anchors_ = true
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Battle/BattleUI/SkillInfo" unique_id=744137635]
+layout_mode = 2
+
+[node name="Damage" type="Label" parent="Battle/BattleUI/SkillInfo/VBoxContainer" unique_id=2052489933]
+layout_mode = 2
+
+[node name="Hitchance" type="Label" parent="Battle/BattleUI/SkillInfo/VBoxContainer" unique_id=404701638]
+layout_mode = 2
+
+[node name="ScrollContainer" type="ScrollContainer" parent="Battle/BattleUI/SkillInfo/VBoxContainer/Hitchance" unique_id=354054572]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="SkillDescription" type="Label" parent="Battle/BattleUI/SkillInfo/VBoxContainer/Hitchance/ScrollContainer" unique_id=2124173428]
+layout_mode = 2
+
+[node name="SkillPanel" type="PanelContainer" parent="Battle/BattleUI" unique_id=826350799]
+anchors_preset = -1
+anchor_top = 0.6296296
+anchor_right = 0.5833333
+anchor_bottom = 1.0
+offset_top = 50.0
+grow_vertical = 0
+metadata/_edit_use_anchors_ = true
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Battle/BattleUI/SkillPanel" unique_id=836709042]
+layout_mode = 2
+
+[node name="HeadRow" type="HBoxContainer" parent="Battle/BattleUI/SkillPanel/VBoxContainer" unique_id=88149691]
+layout_mode = 2
+
+[node name="NameHeader" type="Label" parent="Battle/BattleUI/SkillPanel/VBoxContainer/HeadRow" unique_id=1851538211]
+layout_mode = 2
+
+[node name="PosHeader" type="Label" parent="Battle/BattleUI/SkillPanel/VBoxContainer/HeadRow" unique_id=1304368918]
+layout_mode = 2
+
+[node name="TargetHeader" type="Label" parent="Battle/BattleUI/SkillPanel/VBoxContainer/HeadRow" unique_id=1038778366]
+layout_mode = 2
+
+[node name="TimeHeader" type="Label" parent="Battle/BattleUI/SkillPanel/VBoxContainer/HeadRow" unique_id=1060651725]
+layout_mode = 2
+
+[node name="MPHeader" type="Label" parent="Battle/BattleUI/SkillPanel/VBoxContainer/HeadRow" unique_id=2120527410]
+layout_mode = 2
+
+[node name="ScrollContainer" type="ScrollContainer" parent="Battle/BattleUI/SkillPanel/VBoxContainer" unique_id=1539459132]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="SkillList" type="VBoxContainer" parent="Battle/BattleUI/SkillPanel/VBoxContainer/ScrollContainer" unique_id=827824363]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="DimOverlay" type="ColorRect" parent="Battle/BattleUI" unique_id=1301799908]
+offset_top = 730.0
+offset_right = 1120.0
+offset_bottom = 1080.0
+color = Color(0, 0, 0, 0)
+
+[node name="HighlightLayer" type="Node2D" parent="Battle/BattleUI" unique_id=78797224]
+position = Vector2(960, 540)
+
+[node name="Assets" type="Node" parent="." unique_id=1766711091]
+
+[node name="Character" type="Node" parent="Assets" unique_id=1944294410]
+
+[node name="Skills" type="Node" parent="Assets/Character" unique_id=877868086]

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" format=3 uid="uid://c3ochv4gwilu8"]
+
+[ext_resource type="Script" uid="uid://dgdwcnm8d18ae" path="res://Scripts/Character/SkillScripts/Player/Mage Unit 129/Siegfried/ReloadRifleSiegfried.gd" id="1_j5ful"]
+
+[resource]
+script = ExtResource("1_j5ful")
+targetType = 4
+skillName = "Reload"
+selfPos = Array[int]([2, 3, 4])
+timeCost = -3
+metadata/_custom_type_script = "uid://b3exfua6kxbit"

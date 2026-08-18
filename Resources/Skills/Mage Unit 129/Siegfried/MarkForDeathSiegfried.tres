@@ -1,0 +1,17 @@
+[gd_resource type="Resource" format=3 uid="uid://dhi2ig6gyal8s"]
+
+[ext_resource type="Script" uid="uid://nsxiq3yesiat" path="res://Scripts/Character/SkillScripts/Player/Mage Unit 129/Siegfried/MarkForDeathSiegfried.gd" id="1_dow2o"]
+
+[resource]
+script = ExtResource("1_dow2o")
+validTargetStates = Array[int]([0, 1])
+skillName = "Mark For Death"
+selfPos = Array[int]([3, 4])
+tarPos = Array[int]([1, 2, 3, 4])
+timeCost = -3
+manaCost = 2
+accuracyBonus = 500
+hitStealth = true
+ignoreGuard = true
+ignoreStealth = true
+metadata/_custom_type_script = "uid://b3exfua6kxbit"

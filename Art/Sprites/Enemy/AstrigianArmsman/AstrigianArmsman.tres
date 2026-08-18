@@ -1,0 +1,14 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://b3k1xi5xy0flf"]
+
+[ext_resource type="Texture2D" uid="uid://dx0ub6krncnrw" path="res://Art/Sprites/Enemy/AstrigianArmsman/PlaceholderIdleAstArms.png" id="1_o6lfn"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_o6lfn")
+}],
+"loop": 1,
+"name": &"idle",
+"speed": 5.0
+}]

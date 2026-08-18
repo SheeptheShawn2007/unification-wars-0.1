@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="BulwarkGalahad" format=3 uid="uid://dh6fsoqsuq36f"]
+
+[ext_resource type="Script" uid="uid://vxcy7wxcmopj" path="res://Scripts/Character/SkillScripts/Player/Mage Unit 129/Galahad/BulwarkGalahad.gd" id="1_ef00t"]
+
+[resource]
+script = ExtResource("1_ef00t")
+validTargetStates = Array[int]([0, 1])
+targetType = 4
+skillName = "Bulwark"
+selfPos = Array[int]([1])
+tarPos = Array[int]([1])
+timeCost = 1
+manaCost = 3
+accuracyBonus = 999
+ignoreDodge = true
+ignoreDefense = true
+ignoreOffense = true
+metadata/_custom_type_script = "uid://b3exfua6kxbit"

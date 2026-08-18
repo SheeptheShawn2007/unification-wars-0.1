@@ -1,0 +1,38 @@
+[gd_scene format=3 uid="uid://cpjj12ruqy2or"]
+
+[ext_resource type="Script" uid="uid://bo3axotivjuk2" path="res://Resources/Characters/Enemies/LaticianRifleman/LaticianRifleman.gd" id="1_ecjpx"]
+[ext_resource type="Resource" uid="uid://b5xx1nnbii75h" path="res://Resources/Skills/Enemy/LaticianRifleman/BayonetThrust.tres" id="2_4t545"]
+[ext_resource type="Resource" uid="uid://bp6ymhqacibis" path="res://Resources/Skills/Common Skills/Pass.tres" id="2_8gsqk"]
+[ext_resource type="Resource" uid="uid://du2tvir64ja84" path="res://Resources/Skills/Enemy/LaticianRifleman/RifleShot.tres" id="3_aj43n"]
+[ext_resource type="SpriteFrames" uid="uid://dkq6u1hf2frp" path="res://Art/Sprites/Enemy/LaticianRifleman/LaticianRifleman.tres" id="5_ahrgv"]
+
+[node name="LaticianRifleman" type="Node2D" unique_id=852924992]
+script = ExtResource("1_ecjpx")
+maxHP = 12
+maxMP = null
+originalDefense = null
+rankPosition = null
+resilience = null
+MaxCorpseHP = 12
+corpseDefense = null
+recoverHP = null
+originalSpeed = 12
+manaRegen = null
+manaExhaust = null
+manaBonus = null
+hpRegen = null
+shield = null
+originalDodge = null
+originalAccuracy = 65
+spawnCorpse = null
+passSkill = ExtResource("2_8gsqk")
+charName = "Latician Rifleman"
+skills = Array[Object]([ExtResource("2_4t545"), ExtResource("3_aj43n")])
+keywords = Array[int]([0, 16])
+metadata/_custom_type_script = "uid://crda8oepqrnj"
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1129314806]
+position = Vector2(-37.000004, -294)
+scale = Vector2(0.9967985, 1.0662405)
+sprite_frames = ExtResource("5_ahrgv")
+animation = &"Idle"

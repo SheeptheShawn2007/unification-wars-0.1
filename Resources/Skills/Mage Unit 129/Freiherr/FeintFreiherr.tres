@@ -1,0 +1,16 @@
+[gd_resource type="Resource" format=3 uid="uid://c6mnr7f4qrkhl"]
+
+[ext_resource type="Script" uid="uid://sc32d4cu8v73" path="res://Scripts/Character/SkillScripts/Player/Mage Unit 129/Freiherr/FeintFreiherr.gd" id="1_v8h6s"]
+
+[resource]
+script = ExtResource("1_v8h6s")
+validTargetStates = Array[int]([1, 0, 3])
+skillName = "Feint"
+damage = 8
+selfPos = Array[int]([2, 3])
+tarPos = Array[int]([2, 3, 4])
+timeCost = 3
+pierce = 2
+manaCost = 4
+accuracyBonus = 8
+metadata/_custom_type_script = "uid://b3exfua6kxbit"

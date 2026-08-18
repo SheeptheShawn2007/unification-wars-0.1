@@ -1,0 +1,41 @@
+[gd_scene format=3 uid="uid://bqishephj8khx"]
+
+[ext_resource type="Script" uid="uid://cnd3km221bmkd" path="res://Resources/Characters/Players/Mage Unit 129/Siegfried/Siegfried.gd" id="1_y4t7l"]
+[ext_resource type="Script" uid="uid://b3exfua6kxbit" path="res://Scripts/Character/Skill.gd" id="2_n6b46"]
+[ext_resource type="Resource" uid="uid://bp6ymhqacibis" path="res://Resources/Skills/Common Skills/Pass.tres" id="2_s5sd6"]
+[ext_resource type="Resource" uid="uid://d3tr18fpwdwiu" path="res://Resources/Skills/Mage Unit 129/Siegfried/CarapaceProtocol.tres" id="3_63ply"]
+[ext_resource type="Resource" uid="uid://ccj3x1v2b77vb" path="res://Resources/Skills/Mage Unit 129/Siegfried/ObscurationProtocol.tres" id="4_3cmn6"]
+[ext_resource type="Resource" uid="uid://bpmg1lj7rpyhn" path="res://Resources/Skills/Mage Unit 129/Siegfried/DecimationProtocol.tres" id="5_o1544"]
+[ext_resource type="Resource" uid="uid://c6g4umov4ug42" path="res://Resources/Skills/Mage Unit 129/Siegfried/BayonetSlashSiegfried.tres" id="6_s5sd6"]
+[ext_resource type="Resource" uid="uid://dg1tip3pdiibm" path="res://Resources/Skills/Mage Unit 129/Siegfried/AimedShotSiegfried.tres" id="7_nui4v"]
+[ext_resource type="Resource" uid="uid://ckxaanauwt7qi" path="res://Resources/Skills/Mage Unit 129/Siegfried/UnloadRifleSiegfried.tres" id="8_bsx6f"]
+[ext_resource type="Resource" uid="uid://c3ochv4gwilu8" path="res://Resources/Skills/Mage Unit 129/Siegfried/ReloadRifleSiegfried.tres" id="9_eqg03"]
+[ext_resource type="Resource" uid="uid://dhi2ig6gyal8s" path="res://Resources/Skills/Mage Unit 129/Siegfried/MarkForDeathSiegfried.tres" id="10_67heu"]
+[ext_resource type="SpriteFrames" uid="uid://pso7ahrvyj2w" path="res://Art/Sprites/Player/Siegfried/Siegfried.tres" id="12_c7wxx"]
+
+[node name="Siegfried" type="Node2D" unique_id=1345648981]
+script = ExtResource("1_y4t7l")
+maxHP = 20
+maxMP = 16
+originalDefense = 2
+resilience = 3
+MaxCorpseHP = 16
+corpseDefense = 1
+recoverHP = 12
+originalSpeed = 8
+manaRegen = 4
+manaExhaust = 4
+manaBonus = 2
+hpRegen = 6
+originalAccuracy = 90
+spawnCorpse = true
+passSkill = ExtResource("2_s5sd6")
+charName = "Siegfried"
+skills = Array[ExtResource("2_n6b46")]([ExtResource("3_63ply"), ExtResource("4_3cmn6"), ExtResource("5_o1544"), ExtResource("6_s5sd6"), ExtResource("7_nui4v"), ExtResource("8_bsx6f"), ExtResource("9_eqg03"), ExtResource("10_67heu")])
+keywords = Array[int]([1, 14, 16, 17, 18, 23])
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1197675954]
+position = Vector2(1.9999999, -254)
+scale = Vector2(0.4405411, 1.1373042)
+sprite_frames = ExtResource("12_c7wxx")
+animation = &"Idle"

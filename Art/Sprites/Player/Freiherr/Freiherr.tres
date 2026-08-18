@@ -1,0 +1,14 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://bpt7e43ru1li6"]
+
+[ext_resource type="Texture2D" uid="uid://cf8njxjulydvo" path="res://Art/Sprites/Player/Freiherr/Freiherr Placeholder.jpg" id="1_qqtlv"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_qqtlv")
+}],
+"loop": 1,
+"name": &"Idle",
+"speed": 5.0
+}]

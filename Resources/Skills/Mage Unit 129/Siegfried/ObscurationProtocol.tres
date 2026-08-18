@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ObscurationProtocol" format=3 uid="uid://ccj3x1v2b77vb"]
+
+[ext_resource type="Script" uid="uid://cjt8pt34vdbul" path="res://Scripts/Character/SkillScripts/Player/Mage Unit 129/Siegfried/ObscurationProtocol.gd" id="1_l0yrf"]
+
+[resource]
+script = ExtResource("1_l0yrf")
+validTargetStates = Array[int]([0, 1])
+targetType = 3
+skillName = "Obscuration Protocol"
+selfPos = Array[int]([2, 3, 4])
+tarPos = Array[int]([1, 2, 3, 4])
+timeCost = 3
+manaCost = 6
+metadata/_custom_type_script = "uid://b3exfua6kxbit"

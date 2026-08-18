@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://bx3uxwmht3f0s"]
+
+[ext_resource type="Script" uid="uid://dopr7hlwy7xa1" path="res://Resources/Characters/Players/RWBY/Yang.gd" id="1_1rc84"]
+
+[node name="Yang" type="Node2D" unique_id=811503058]
+script = ExtResource("1_1rc84")
+charName = "Yang"
+keywords = Array[int]([1, 14, 18, 20, 24])

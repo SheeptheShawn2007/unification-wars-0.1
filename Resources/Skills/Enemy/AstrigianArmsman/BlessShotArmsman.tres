@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="BlessRoundArmsman" format=3 uid="uid://btfdgd6r614f1"]
+
+[ext_resource type="Script" uid="uid://cchrn0nrd411g" path="res://Scripts/Character/SkillScripts/Enemy/AstrigianArmsman/BlessRoundArmsman.gd" id="1_ajueq"]
+
+[resource]
+script = ExtResource("1_ajueq")
+validTargetStates = Array[int]([0, 1])
+targetType = 4
+skillName = "Bless Round"
+selfPos = Array[int]([3, 4])
+timeCost = 3
+ignoreGuard = true
+ignoreDodge = true
+ignoreDefense = true
+ignoreStealth = true
+ignoreOffense = true
+metadata/_custom_type_script = "uid://b3exfua6kxbit"

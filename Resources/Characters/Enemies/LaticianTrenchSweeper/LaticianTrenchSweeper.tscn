@@ -1,0 +1,39 @@
+[gd_scene format=3 uid="uid://6xih8f7ef2sj"]
+
+[ext_resource type="Script" uid="uid://k4awsq0rtgvx" path="res://Resources/Characters/Enemies/LaticianTrenchSweeper/LaticianTrenchSweeper.gd" id="1_qpt4g"]
+[ext_resource type="Resource" uid="uid://bp6ymhqacibis" path="res://Resources/Skills/Common Skills/Pass.tres" id="2_0nolp"]
+[ext_resource type="Script" uid="uid://b3exfua6kxbit" path="res://Scripts/Character/Skill.gd" id="3_u6xya"]
+[ext_resource type="Resource" uid="uid://ceh8efyrwgo0v" path="res://Resources/Skills/Enemy/LaticianTrenchSweeper/MaceSwing.tres" id="4_3q5l0"]
+[ext_resource type="Resource" uid="uid://cjgdypm2gfi2t" path="res://Resources/Skills/Enemy/LaticianTrenchSweeper/ShotgunBlast.tres" id="5_uwy65"]
+[ext_resource type="SpriteFrames" uid="uid://b3k1xi5xy0flf" path="res://Art/Sprites/Enemy/AstrigianArmsman/AstrigianArmsman.tres" id="6_3q5l0"]
+
+[node name="LaticianTrenchSweeper" type="Node2D" unique_id=94477065]
+script = ExtResource("1_qpt4g")
+maxHP = 16
+maxMP = null
+originalDefense = 1
+rankPosition = null
+resilience = 1
+MaxCorpseHP = 12
+corpseDefense = null
+recoverHP = null
+originalSpeed = 10
+manaRegen = null
+manaExhaust = null
+manaBonus = null
+hpRegen = null
+shield = null
+originalDodge = 5
+originalAccuracy = 75
+spawnCorpse = null
+passSkill = ExtResource("2_0nolp")
+charName = "Latician Trench Sweeper"
+skills = Array[ExtResource("3_u6xya")]([ExtResource("5_uwy65"), ExtResource("4_3q5l0")])
+keywords = Array[int]([0, 16])
+metadata/_custom_type_script = "uid://crda8oepqrnj"
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1556035735]
+position = Vector2(-91, -308.00003)
+scale = Vector2(1.2738096, 1.2738094)
+sprite_frames = ExtResource("6_3q5l0")
+animation = &"idle"

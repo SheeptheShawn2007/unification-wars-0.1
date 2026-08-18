@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="DecimationProtocol" format=3 uid="uid://bpmg1lj7rpyhn"]
+
+[ext_resource type="Script" uid="uid://cf7ysffk5rs26" path="res://Scripts/Character/SkillScripts/Player/Mage Unit 129/Siegfried/DecimationProtocol.gd" id="1_b4hgl"]
+
+[resource]
+script = ExtResource("1_b4hgl")
+validTargetStates = Array[int]([0, 1])
+targetType = 3
+skillName = "Decimation Protocol"
+selfPos = Array[int]([3, 4])
+tarPos = Array[int]([1, 2, 3, 4])
+timeCost = 3
+manaCost = 5
+accuracyBonus = 10
+ignoreDodge = true
+ignoreStealth = true
+metadata/_custom_type_script = "uid://b3exfua6kxbit"

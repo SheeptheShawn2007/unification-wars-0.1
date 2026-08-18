@@ -1,0 +1,15 @@
+[gd_resource type="Resource" format=3 uid="uid://cu3yvm2xepwi7"]
+
+[ext_resource type="Script" uid="uid://dmrxu8vt8w31l" path="res://Scripts/Character/SkillScripts/Player/Mage Unit 129/Freiherr/DeclareDuel.gd" id="1_0vnil"]
+
+[resource]
+script = ExtResource("1_0vnil")
+validTargetStates = Array[int]([0, 1])
+skillName = "Declare Duel"
+selfPos = Array[int]([1, 2, 3, 4])
+tarPos = Array[int]([1, 2, 3, 4])
+timeCost = 1
+manaCost = 3
+accuracyBonus = 999
+hitStealth = true
+metadata/_custom_type_script = "uid://b3exfua6kxbit"

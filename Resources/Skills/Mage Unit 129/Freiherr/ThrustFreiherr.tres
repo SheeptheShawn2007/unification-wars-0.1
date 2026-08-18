@@ -1,0 +1,15 @@
+[gd_resource type="Resource" format=3 uid="uid://ch5elj2gl0jkr"]
+
+[ext_resource type="Script" uid="uid://r4xerwmgcd5a" path="res://Scripts/Character/SkillScripts/Player/Mage Unit 129/Freiherr/ThrustFreiherr.gd" id="1_25pe7"]
+
+[resource]
+script = ExtResource("1_25pe7")
+validTargetStates = Array[int]([1, 0, 3])
+skillName = "Thrust"
+damage = 5
+damageVar = 1
+selfPos = Array[int]([1, 2])
+tarPos = Array[int]([1, 2])
+pierce = 2
+accuracyBonus = 7
+metadata/_custom_type_script = "uid://b3exfua6kxbit"

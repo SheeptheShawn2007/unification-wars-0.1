@@ -1,0 +1,41 @@
+[gd_scene format=3 uid="uid://dv3btqtacc75l"]
+
+[ext_resource type="Script" uid="uid://c6nad65l4bia1" path="res://Resources/Characters/Players/Mage Unit 129/Freiherr/Freiherr.gd" id="1_uhsyg"]
+[ext_resource type="Resource" uid="uid://bp6ymhqacibis" path="res://Resources/Skills/Common Skills/Pass.tres" id="2_fv7xm"]
+[ext_resource type="Script" uid="uid://b3exfua6kxbit" path="res://Scripts/Character/Skill.gd" id="3_vy4a8"]
+[ext_resource type="Resource" uid="uid://ch5elj2gl0jkr" path="res://Resources/Skills/Mage Unit 129/Freiherr/ThrustFreiherr.tres" id="4_fv7xm"]
+[ext_resource type="Resource" uid="uid://bahffjn6yyfq4" path="res://Resources/Skills/Mage Unit 129/Freiherr/PassThroughFreiherr.tres" id="5_pg2y7"]
+[ext_resource type="Resource" uid="uid://c6mnr7f4qrkhl" path="res://Resources/Skills/Mage Unit 129/Freiherr/FeintFreiherr.tres" id="6_ha7na"]
+[ext_resource type="Resource" uid="uid://bke5e5e516ug5" path="res://Resources/Skills/Mage Unit 129/Freiherr/LungeFreiherr.tres" id="7_ymbgm"]
+[ext_resource type="Resource" uid="uid://bkpva32nhl7au" path="res://Resources/Skills/Mage Unit 129/Freiherr/NobleTechnique.tres" id="8_vy4a8"]
+[ext_resource type="Resource" uid="uid://cu3yvm2xepwi7" path="res://Resources/Skills/Mage Unit 129/Freiherr/DeclareDuel.tres" id="9_fv7xm"]
+[ext_resource type="Resource" uid="uid://pdbj3ym7hj1i" path="res://Resources/Skills/Mage Unit 129/Freiherr/WedgeAndStinger.tres" id="10_pg2y7"]
+[ext_resource type="SpriteFrames" uid="uid://bpt7e43ru1li6" path="res://Art/Sprites/Player/Freiherr/Freiherr.tres" id="11_vy4a8"]
+
+[node name="Freiherr" type="Node2D" unique_id=1375895340]
+script = ExtResource("1_uhsyg")
+maxHP = 16
+maxMP = 16
+originalDefense = 1
+resilience = 2
+MaxCorpseHP = 10
+corpseDefense = 1
+recoverHP = 7
+originalSpeed = 6
+manaRegen = 5
+manaExhaust = 5
+manaBonus = 2
+hpRegen = 7
+originalDodge = 20
+originalAccuracy = 90
+passSkill = ExtResource("2_fv7xm")
+charName = "Freiherr"
+skills = Array[ExtResource("3_vy4a8")]([ExtResource("4_fv7xm"), ExtResource("5_pg2y7"), ExtResource("6_ha7na"), ExtResource("7_ymbgm"), ExtResource("8_vy4a8"), ExtResource("8_vy4a8"), ExtResource("9_fv7xm"), ExtResource("10_pg2y7")])
+keywords = Array[int]([1, 16, 17, 18, 23, 14])
+metadata/_custom_type_script = "uid://07b6qvrvld8d"
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1883322297]
+position = Vector2(0, -255.60155)
+scale = Vector2(0.61007464, 0.8422059)
+sprite_frames = ExtResource("11_vy4a8")
+animation = &"Idle"

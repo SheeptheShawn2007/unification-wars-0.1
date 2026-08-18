@@ -1,0 +1,11 @@
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://dp1wkijpp5g8m"]
+
+[ext_resource type="Script" uid="uid://d4blmpqe5d2q2" path="res://Scripts/Character/SkillScripts/Common Skills/MoveSkill.gd" id="1_oki4f"]
+
+[resource]
+script = ExtResource("1_oki4f")
+targetType = 4
+skillName = "Wait"
+selfPos = Array[int]([1, 2, 3, 4])
+timeCost = -3
+metadata/_custom_type_script = "uid://b3exfua6kxbit"

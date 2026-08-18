@@ -1,0 +1,14 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://dkq6u1hf2frp"]
+
+[ext_resource type="Texture2D" uid="uid://dof6gcp8hgwis" path="res://Art/Sprites/Enemy/LaticianRifleman/PlaceholderRifleman-removebg-preview.png" id="1_jrfuw"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_jrfuw")
+}],
+"loop": 1,
+"name": &"Idle",
+"speed": 5.0
+}]
